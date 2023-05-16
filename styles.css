@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  src: url('./fonts/Poiret_One/PoiretOne-Regular.ttf');
+}
+
+html,
+body {
+  margin: 0;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#content #header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content #header ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  color: white;
+  list-style-type: none;
+}
+
+#content #header ul li {
+  cursor: pointer;
+  margin: 0px 20px;
+  font-family: Cinzel;
+  font-size: 1.3rem;
+}
+
+#content #header ul li:hover {
+  transform: scale(1.2);
+}
+
+#main-content {
+  background-image: url('./img/main-background.jpg');
+  background-size: cover;
+}
+
+#main-content .main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#main-content .main-info h2 {
+  font-family: Cinzel;
+  font-size: 3rem;
+}
+
+#main-content .main-info p {
+  font-family: Poiret One;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#menu-content {
+  background-image: url('./img/menu-background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-content .menu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#menu-content .menu-info h2 {
+  font-family: Cinzel;
+  font-size: 3rem;
+}
+
+#menu-content .menu-info p {
+  font-family: Poiret One;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#contact-content {
+  background-image: url('./img/contact-background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-content .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#contact-content .contact-info h2 {
+  font-family: Cinzel;
+  font-size: 3rem;
+}
+
+#contact-content .contact-info p {
+  font-family: Poiret One;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cinzel;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
